@@ -7,16 +7,13 @@ import {Slide} from './slide';
 
 const App: React.FC = () => {
   const [active, setActive] = useState(1);
-  const [isRunning, setIsRunning] = useState(true);
 
   useEffect(() => {
-    if (isRunning) {
-      const id = window.setInterval(() => {
-        setActive((active) => active + 1);
-      }, 5000);
-      return () => window.clearInterval(id);
-    }
-  }, [isRunning]);
+    const id = window.setInterval(() => {
+      setActive((active) => active + 1);
+    }, 5000);
+    return () => window.clearInterval(id);
+  }, []);
 
   if (active === 5) {
     setActive(1);
