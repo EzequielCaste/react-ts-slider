@@ -16,6 +16,13 @@ body {
 .App {
   font-family: "Poppins", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
+  display: flex;
+  height: 98vh;
+  flex-direction: column;
+  padding: 1em 0;
+  width: 90vw;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .slider-container {
@@ -94,6 +101,29 @@ article .quote {
   width: 70%;
   margin: 0 auto;
   color: #2b7892;
+}
+
+footer {
+  width: 95vw;
+  font-size: 0.95rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+footer a {
+  margin: 0 4px;
+}
+
+a,
+a:visited {
+  color: #2b7892;
+}
+
+a:hover {
+  color: black;
 }
 
 /*# sourceMappingURL=App.css.map */
